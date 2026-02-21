@@ -102,16 +102,17 @@ Each model was evaluated using:
 ![Model Comparison](model_comparison.png)
 
 ---
+## 🏆 Conclusion
 
-## 🏆 **Conclusion**
+- The **XGBoost Regressor** achieved the best performance with the highest **R² score (0.9620)** and the lowest **MAE and RMSE**, making it the most accurate model for predicting average response time.
 
-* The **Random Forest Regressor** achieved the highest accuracy (**R² = 0.95**, lowest RMSE).
-* **Decision Tree** also performed well with R² = 0.92.
-* **Linear Regression** captured basic linear relationships but failed to model nonlinear load behavior.
-* **SVR** and **KNN** underperformed due to poor generalization in this type of nonlinear system.
-* Overall, **ensemble tree models** best captured the complex queue-based dynamics of the server system.
+- **Random Forest** and **Gradient Boosting** also performed well, demonstrating the effectiveness of ensemble tree-based methods in capturing nonlinear relationships in queue-based systems.
 
-This validates that **simulation-generated data** can effectively train ML models for **performance prediction** in cloud environments.
+- **Linear Regression** and **Ridge Regression** showed significantly lower accuracy, indicating that simple linear models are insufficient to model the complex dynamics of cloud server workloads.
+
+- Overall, **ensemble learning models (XGBoost and Random Forest)** proved most suitable for cloud server performance prediction.
+
+- This study confirms that **simulation-generated data** can successfully train machine learning models for **performance prediction in cloud environments**.
 
 ---
 
